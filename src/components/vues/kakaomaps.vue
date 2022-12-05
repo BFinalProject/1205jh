@@ -22,10 +22,17 @@
         id="offcanvasScrolling"
         aria-labelledby="offcanvasScrollingLabel"
       >
-        <div class="offcanvas-header" display="flex" text-align="center">
-          <button type="button" onclick="location.href='/';">
-            홈
-          </button>
+        <div
+          class="offcanvas-header"
+          display="flex"
+          text-align="center"
+          style="background-color: #113f89;"
+        >
+          <img
+            src="../../mainboard/images/logo2.png"
+            style="cursor: pointer;"
+            onclick="location.href='/'"
+          />
           <button
             type="button"
             class="btn-close"
@@ -33,7 +40,7 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-header" display="flex" text-align="center">
+        <div class="offcanvas-header" display="flex">
           <div>
             <h4 class="offcanvas-title" id="offcanvasScrollingLabel">
               아래에 해당하는 카테고리를 선택해주세요
@@ -41,340 +48,267 @@
           </div>
         </div>
         <!-- 1 -->
-        <div>
+        <div
+          style="border-bottom: solid 5px #f56a6a; border-top: solid 5px #f56a6a"
+        >
+          <br />
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option1"
+            autocomplete="off"
+            value="한식"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option1">한식</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option2"
+            autocomplete="off"
+            value="중식"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option2">중식</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option3"
+            autocomplete="off"
+            value="양식"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option3">양식</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option4"
+            autocomplete="off"
+            value="일식"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option4">일식</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option5"
+            autocomplete="off"
+            value="기타음식"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option5">기타음식</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option6"
+            autocomplete="off"
+            value="술집"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option6">술집</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option7"
+            autocomplete="off"
+            value="맛집"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option7">맛집</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option8"
+            autocomplete="off"
+            value="기념일"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option8">기념일</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option9"
+            autocomplete="off"
+            value="가성비"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option9">가성비</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option10"
+            autocomplete="off"
+            value="뷰"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option10">뷰</label>
+          <br />
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option11"
+            autocomplete="off"
+            value="가족"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option11">가족</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option12"
+            autocomplete="off"
+            value="애견동반"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option12">애견동반</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option13"
+            autocomplete="off"
+            value="색다른"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option13">색다른</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option14"
+            autocomplete="off"
+            value="청결"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option14">청결</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option15"
+            autocomplete="off"
+            value="시끌벅적"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option15">시끌벅적</label>
+          <br />
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option16"
+            autocomplete="off"
+            value="한적"
+            v-model="checkedemotion"
+          />
+
+          <label class="btn btn-outline-primary" for="option16">한적</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option17"
+            autocomplete="off"
+            value="활동적"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option17">활동적</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option18"
+            autocomplete="off"
+            value="고급스런"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option18">고급스런</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option19"
+            autocomplete="off"
+            value="감성적"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option19">감성적</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option20"
+            autocomplete="off"
+            value="이국적"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option20">이국적</label>
+          <br />
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option21"
+            autocomplete="off"
+            value="편리한"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option21">편리한</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option22"
+            autocomplete="off"
+            value="전통적"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option22">전통적</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option23"
+            autocomplete="off"
+            value="모던한"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option23">모던한</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option24"
+            autocomplete="off"
+            value="편안한"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option24">편안한</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="option25"
+            autocomplete="off"
+            value="이색적"
+            v-model="checkedemotion"
+          />
+          <label class="btn btn-outline-primary" for="option25">이색적</label>
+          <br />
+          <br />
           <div>
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="option1"
-              id="option1"
-              autocomplete="off"
-              value="한식"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option1"
-              >한식</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="option2"
-              id="option2"
-              autocomplete="off"
-              value="중식"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option2"
-              >중식</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="option3"
-              id="option3"
-              autocomplete="off"
-              value="양식"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option3"
-              >양식</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="option4"
-              id="option4"
-              autocomplete="off"
-              value="일식"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option4"
-              >일식</label
-            >
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="option5"
-              id="option5"
-              autocomplete="off"
-              value="기타 음식"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option5"
-              >기타 음식</label
-            >
-
-            <br />
-            <!-- 2 -->
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options2"
-              id="option6"
-              autocomplete="off"
-              value="술집"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option6"
-              >술집</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options2"
-              id="option7"
-              autocomplete="off"
-              value="맛집"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option7"
-              >맛집</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options2"
-              id="option8"
-              autocomplete="off"
-              value="기념일"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option8"
-              >기념일</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options2"
-              id="option9"
-              autocomplete="off"
-              value="가성비"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option9"
-              >가성비</label
-            >
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options2"
-              id="option10"
-              autocomplete="off"
-              value="뷰"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option10"
-              >뷰</label
-            >
-
-            <br />
-            <!-- 3 -->
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options3"
-              id="option11"
-              autocomplete="off"
-              value="가족"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option11"
-              >가족</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options3"
-              id="option12"
-              autocomplete="off"
-              value="애견동반"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option12"
-              >애견동반</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options3"
-              id="option13"
-              autocomplete="off"
-              value="색다른"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option13"
-              >색다른</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options3"
-              id="option14"
-              autocomplete="off"
-              value="청결"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option14"
-              >청결</label
-            >
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options3"
-              id="option15"
-              autocomplete="off"
-              value="시끌벅적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option15"
-              >시끌벅적</label
-            >
-
-            <br />
-            <!-- 4 -->
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options4"
-              id="option16"
-              autocomplete="off"
-              value="한적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option16"
-              >한적</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options4"
-              id="option17"
-              autocomplete="off"
-              value="활동적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option17"
-              >활동적</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options4"
-              id="option18"
-              autocomplete="off"
-              value="고급스런"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option18"
-              >고급스런</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options4"
-              id="option19"
-              autocomplete="off"
-              value="감성적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option19"
-              >감성적</label
-            >
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options4"
-              id="option20"
-              autocomplete="off"
-              value="이국적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option20"
-              >이국적</label
-            >
-
-            <br />
-            <!-- 5 -->
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options5"
-              id="option21"
-              autocomplete="off"
-              value="편리한"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option21"
-              >편리한</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options5"
-              id="option22"
-              autocomplete="off"
-              value="전통적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option22"
-              >전통적</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options5"
-              id="option23"
-              autocomplete="off"
-              value="모던한"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option23"
-              >모던한</label
-            >
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options5"
-              id="option24"
-              autocomplete="off"
-              value="편안한"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option24"
-              >편안한</label
-            >
-            <input
-              type="checkbox"
-              class="btn-check"
-              name="options5"
-              id="option25"
-              autocomplete="off"
-              value="이색적"
-              v-model="checkedemotion"
-            />
-            <label style="margin: 10px;" class="btn btn-warning" for="option25"
-              >이색적</label
-            >
-            <br />
             <span>체크한 이름: {{ checkedemotion }}</span>
           </div>
         </div>
@@ -1041,5 +975,10 @@ button {
 label,
 span {
   font-family: "Do Hyeon", sans-serif;
+}
+.btn {
+  height: 50px;
+  width: 90px;
+  text-align: justify;
 }
 </style>

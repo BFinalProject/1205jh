@@ -102,7 +102,7 @@
           <input type="email" placeholder="아이디" v-model="user_id" />
           <br />
           <input type="password" placeholder="비밀번호" v-model="user_pw" />
-          <a href="#">아이디 혹은 비밀번호를 잊어버리셨나요?</a>
+          <a href="/findidpw">아이디 혹은 비밀번호를 잊어버리셨나요?</a>
 
           <div class="login">
             <button
